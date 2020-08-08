@@ -13,6 +13,7 @@
 		55BE9CCE24DF662B00B814FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BE9CCC24DF662B00B814FE /* Main.storyboard */; };
 		55BE9CD024DF662C00B814FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55BE9CCF24DF662C00B814FE /* Assets.xcassets */; };
 		55BE9CD324DF662C00B814FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BE9CD124DF662C00B814FE /* LaunchScreen.storyboard */; };
+		55BE9CDE24DF67AF00B814FE /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE9CDD24DF67AF00B814FE /* DogAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		55BE9CCF24DF662C00B814FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55BE9CD224DF662C00B814FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55BE9CD424DF662C00B814FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BE9CDD24DF67AF00B814FE /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		55BE9CC524DF662B00B814FE /* Random_Dog_API */ = {
 			isa = PBXGroup;
 			children = (
-				55BE9CC624DF662B00B814FE /* AppDelegate.swift */,
-				55BE9CC824DF662B00B814FE /* SceneDelegate.swift */,
-				55BE9CCA24DF662B00B814FE /* ViewController.swift */,
-				55BE9CCC24DF662B00B814FE /* Main.storyboard */,
-				55BE9CCF24DF662C00B814FE /* Assets.xcassets */,
-				55BE9CD124DF662C00B814FE /* LaunchScreen.storyboard */,
+				55BE9CDC24DF678F00B814FE /* Model */,
+				55BE9CDB24DF66E300B814FE /* Controller */,
+				55BE9CDA24DF66BE00B814FE /* View */,
 				55BE9CD424DF662C00B814FE /* Info.plist */,
 			);
 			path = Random_Dog_API;
+			sourceTree = "<group>";
+		};
+		55BE9CDA24DF66BE00B814FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55BE9CCC24DF662B00B814FE /* Main.storyboard */,
+				55BE9CCF24DF662C00B814FE /* Assets.xcassets */,
+				55BE9CD124DF662C00B814FE /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55BE9CDB24DF66E300B814FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55BE9CC624DF662B00B814FE /* AppDelegate.swift */,
+				55BE9CC824DF662B00B814FE /* SceneDelegate.swift */,
+				55BE9CCA24DF662B00B814FE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55BE9CDC24DF678F00B814FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55BE9CDD24DF67AF00B814FE /* DogAPI.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				55BE9CCB24DF662B00B814FE /* ViewController.swift in Sources */,
 				55BE9CC724DF662B00B814FE /* AppDelegate.swift in Sources */,
 				55BE9CC924DF662B00B814FE /* SceneDelegate.swift in Sources */,
+				55BE9CDE24DF67AF00B814FE /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +313,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VHAK2KP6YN;
+				DEVELOPMENT_TEAM = R27EL9WB63;
 				INFOPLIST_FILE = Random_Dog_API/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,8 +332,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VHAK2KP6YN;
+				DEVELOPMENT_TEAM = R27EL9WB63;
 				INFOPLIST_FILE = Random_Dog_API/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
